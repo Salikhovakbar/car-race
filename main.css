@@ -1,0 +1,131 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.box {
+  width: 20%;
+  height: 100px;
+  border-radius: 5px;
+  color: white;
+  -webkit-animation-name: race;
+          animation-name: race;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  -webkit-animation-duration: 17s;
+          animation-duration: 17s;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
+div:first-child {
+  background-image: url("https://www.valleychevy.com/wp-content/uploads/valley-chevy-2017-chevrolet-malibu-lt-black-new.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+div:nth-child(2) {
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  background-image: url("https://s.auto.drom.ru/i24261/c/photos/fullsize/chevrolet/optra/chevrolet_optra_1028242.jpg");
+  background-position: center;
+  -webkit-animation-name: gentra;
+          animation-name: gentra;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+  background-size: cover;
+}
+
+div:nth-child(3) {
+  background-image: url("https://www.igyaan.in/wp-content/uploads/2013/08/mm_gal_item_c2_2.img_resize.img_stage._0-1100x619.jpg");
+  background-position: center;
+  background-size: cover;
+}
+
+div:nth-child(4) {
+  background-image: url("https://avatars.mds.yandex.net/i?id=1faa6d25c9eb117b7b783ee61e7e57a3b0b914ec-5749428-images-thumbs&n=13");
+  background-position: center;
+  background-size: cover;
+}
+
+div:nth-child(5) {
+  -webkit-animation-name: gentra;
+          animation-name: gentra;
+  background-image: url("https://avatars.mds.yandex.net/i?id=2abe8ca9b69c04129b3661aadbfe4a08c03abb68-9725170-images-thumbs&n=13");
+  background-position: center;
+  -webkit-transform: scaleX(-1);
+          transform: scaleX(-1);
+  background-size: cover;
+  -webkit-animation-delay: 3s;
+          animation-delay: 3s;
+}
+
+@-webkit-keyframes race {
+  to {
+    -webkit-transform: translateX(calc(100vw - 100%));
+            transform: translateX(calc(100vw - 100%));
+  }
+}
+
+@keyframes race {
+  to {
+    -webkit-transform: translateX(calc(100vw - 100%));
+            transform: translateX(calc(100vw - 100%));
+  }
+}
+
+@-webkit-keyframes gentra {
+  to {
+    -webkit-transform: translateX(calc(100vw - 100%)) scaleX(-1);
+            transform: translateX(calc(100vw - 100%)) scaleX(-1);
+  }
+}
+
+@keyframes gentra {
+  to {
+    -webkit-transform: translateX(calc(100vw - 100%)) scaleX(-1);
+            transform: translateX(calc(100vw - 100%)) scaleX(-1);
+  }
+}
+
+.count {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  font-size: 100px;
+  display: -ms-grid;
+  display: grid;
+  place-items: center;
+}
+
+.count-number {
+  background: -webkit-gradient(linear, left top, left bottom, from(red), to(purple));
+  background: linear-gradient(red, purple);
+  font-weight: 900;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+@media only screen and (max-width: 500px) {
+  div {
+    background-size: contain;
+    width: 30%;
+  }
+}
+/*# sourceMappingURL=main.css.map */
